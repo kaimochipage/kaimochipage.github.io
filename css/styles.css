@@ -1,0 +1,646 @@
+@charset "UTF-8";
+@media screen and (max-width: 1920px) {
+
+  
+  /* 共通部分 */
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body{
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro", sans-serif;
+    line-height: 1.7;
+    color: #16193b;
+    max-width: 1920px;
+    vertical-align: bottom;
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #16193b;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .wrapper {
+    margin: 0 10% 0 10%;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  p, time, dt, dd, th, td, a {
+    font-size: 1.4rem;
+  }
+  .section-title img {
+    width: 80px;
+  }
+  
+  /* Header */
+  
+  header {
+    background-image: url(../img/top_bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    margin-bottom: 100px;
+    animation-name: fadein;
+    animation-duration: 2s;
+  }
+  
+  @keyframes fadein {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .hamburger {
+    width: 40px;
+    position: absolute;
+    top: 5%;
+    left: 93%;
+  }
+  
+  h1 {
+    width: 600px; 
+    margin: 0 auto;
+    line-height: 100vh;
+  }
+  
+  .logo img {
+    vertical-align: middle;
+  }
+  
+  /* Concept */
+  
+  #concept .wrapper {
+    background-image: url(../img/concept.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-bottom: 60px;
+    position: relative;
+  }
+  
+  .concept-content a {
+    display: inline-block;
+    font-size: 1.6rem;
+    letter-spacing: 0.05em;
+    color: white;
+    line-height: 300px;
+    margin: 0 auto;
+  }
+  
+  .concept-content {
+    margin: 0 auto;
+    position: relative;
+    top: 20%;
+  }
+  
+  .concept-content ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .concept-content li {
+    width: 30%;
+    height: 300px;
+    border-radius: 20px;
+  }
+  
+  .concept-content li:hover {
+    opacity: 0.7;
+  }
+  
+  .concept-content li:nth-child(1) {
+    background-image: url(../img/jellyfish.jpg);
+    background-size: cover;
+  }
+  
+  .concept-content li:nth-child(2) {
+    background-image: url(../img/girl.jpg);
+    background-size: cover;
+  }
+  
+  .concept-content li:nth-child(3) {
+    background-image: url(../img/dolphin_e.jpg);
+    background-size: cover;
+  }
+  
+  /* Event */
+  
+  #event .wrapper {
+    background-image: url(../img/event.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:rgba(255,255,255,0.5);
+    background-blend-mode:lighten;
+    height: 100vh;
+    margin-bottom: 60px;
+    position: relative;
+  }
+  
+  .event-content {
+    position: relative;
+    top: 25%;
+  }
+  
+  .event-content ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .event-content li {
+    margin-right: 20px;
+    padding: 20px 0;
+    width: 30%;
+    background-color: rgba(255,255,255,0.9);
+  }
+  
+  .event-content li:last-child {
+    margin-right: 0;
+  }
+  
+  .event-content li img {
+    height: 200px;
+  }
+  
+  .event-text {
+    padding-top: 20px;
+  }
+  
+  .event-text p {
+    margin-bottom: 15px;
+  }
+  
+  .event-title {
+    font-weight: bold;
+  }
+  
+  /* Blog */
+  
+  #blog .wrapper {
+    background-image: url(../img/blog.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:rgba(255,255,255,0.5);
+    background-blend-mode:lighten;
+    height: 100vh;
+    margin-bottom: 60px;
+    position: relative;
+  }
+  
+  .blog-content {
+    position: relative;
+    top: 10%;
+  }
+  
+  .blog-content ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .blog-content li {
+    width: calc(100% / 3 - 20px);
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 20px;
+    padding: 40px 20px;
+    margin: 10px;
+  }
+  
+  .blog-inner {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .blog-img {
+    width: 40%;
+  }
+  
+  .blog-txt {
+    width: 60%;
+    text-align: left;
+  }
+  
+  .blog-txt span {
+    font-weight: bold;
+  }
+  
+  .blog-img img {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .blog-content a {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 8px 20px;
+    border: 2px solid #16193b;
+    border-radius: 30px;
+  }
+  
+  .blog-txt p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .blog-btn:hover {
+    opacity: 0.7;
+  }
+  
+  /* Ticket Hours */
+  
+  #ticket-hours .wrapper {
+    background-image: url(../img/Ticket_hours.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:rgba(255,255,255,0.5);
+    background-blend-mode:lighten;
+    height: 130vh;
+    margin-bottom: 60px;
+    position: relative;
+  }
+  
+  .ticket-hours-inner {
+    position: relative;
+    top: 15%;
+  }
+  
+  .ticket-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ticket-content {
+    background-color: rgba(255,255,255,0.9);
+    margin: 0 auto;
+  }
+  
+  .ticket-table {
+    border: 1px solid #16193b;
+    margin-right: 40px;
+  }
+  
+  .ticket-table thead th {
+    padding: 10px;
+    border-bottom: 1px solid #16193b;
+    border-right: 1px solid #16193b;
+  }
+  
+  .ticket-table thead th:last-of-type {
+    border-bottom: 1px solid #16193b;
+    border-right: none;
+  }
+  
+  .ticket-table tbody th {
+    padding: 10px;
+    border-bottom: 1px solid #16193b;
+    border-right: 1px solid #16193b;
+  }
+  
+  .ticket-table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #16193b;
+    border-right: 1px solid #16193b;
+  }
+  
+  .ticket-txt {
+    width: 40%;
+    text-align: left;
+  }
+  
+  .ticket-txt p {
+    margin-bottom: 20px;
+  }
+  
+  .ticket-content {
+    background-color: rgba(255,255,255,0.7);
+    margin: 0 auto 40px;
+    width: 70%;
+    padding: 40px;
+  }
+  
+  .ticket-table .sale {
+    color: red;
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+  
+  .ticket-txt .sale {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .ticket-table span {
+    color: #16193b;
+    font-weight: normal;
+    text-decoration: line-through;
+  }
+  
+  .hours-content {
+    background-color: rgba(255,255,255,0.7);
+    margin: 0 auto;
+    width: 70%;
+    padding: 40px;
+    text-align: left;
+  }
+  
+  .hours-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hours-txt {
+    width: 40%;
+    margin-right: 40px;
+  }
+  
+  .hours-img img {
+    width: 400px;
+  }
+  
+  .hours-content dl {
+    margin-bottom: 20px;
+  }
+  
+  .hours-content dd {
+    margin-bottom: 10px;
+  }
+  
+  .hours-content p {
+    margin-bottom: 10px;
+  }
+  
+  /* Map */
+  
+  #map {
+    margin-bottom: 120px;
+  }
+  
+  .map-txt {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .map-txt-inner {
+    display: flex;
+  }
+  
+  .map-txt dt {
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+  
+  .map-txt-inner dt {
+    margin-right: 10px;
+  }
+  
+  .map-txt dd {
+    margin-bottom: 40px;
+  }
+  
+  
+  /* Footer */
+  
+  footer {
+    background-image: url(../img/top_bg.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20vh;
+    color: white;
+  }
+  
+  footer a {
+    color: white;
+  }
+  
+  .footer-wrapper {
+    padding: 25px 50px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .footer-content img {
+    width: 200px;
+    vertical-align: top;
+  }
+  
+  footer nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  footer nav li {
+    margin-right: 10px;
+  }
+  
+  .sns-icon img {
+    width: 30px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-txt p {
+    font-size: 1.2rem;
+    letter-spacing: 0.08;
+  }
+  
+}
+  /* media */
+  
+  @media screen and (max-width: 900px) {
+    
+    /* 共通部分 */
+
+    .wrapper {
+      height: auto;
+    }
+
+    .section-title h2 {
+     padding: 0;
+     margin-bottom: 40px;
+    }
+    
+    
+  /* Header */
+
+  header {
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  h1 {
+    line-height: normal;
+    width: 200px;
+  }
+
+  .hamburger {
+    width: 15px;
+    position: absolute;
+    top: 3%;
+    left: 95%;
+  }
+    
+  /* Concept */
+  #concept .wrapper {
+    background-image: none;
+    height: auto;
+  }
+
+  .concept-content ul {
+    flex-direction: column;
+  }
+
+  .concept-content li {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* Event */
+  #event .wrapper {
+    background-image: none;
+    height: auto;
+  }
+
+  .event-content ul {
+    flex-direction: column;
+  }
+
+  .event-content li {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* Blog */
+  #blog .wrapper {
+    background-image: none;
+    height: auto;
+  }
+
+  .blog-content ul {
+    flex-direction: column;
+  }
+
+
+  .blog-content li {
+    width: 100%;
+  }
+
+  .blog-content li:nth-child(even) {
+    display: none;
+  }
+
+  .blog-inner {
+    flex-direction: column;
+  }
+
+  .blog-img {
+    width: 100%;
+  }
+
+  .blog-txt {
+    width: 100%;
+  }
+
+  /* Ticket Hours */
+  #ticket-hours .wrapper {
+    background-image: none;
+    height: auto;
+  }
+
+  .ticket-content {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  .ticket-table {
+    margin: 0 0 20px 0;
+  }
+
+  .ticket-txt {
+    width: 100%;
+  }
+
+  .hours-content {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .hours-txt {
+    width: 100%;
+    margin: 0;
+  }
+
+  .hours-img {
+    display: none;
+  }
+
+  /* Footer */
+
+  footer {
+    height: auto;
+  }
+
+  .footer-wrapper {
+    padding: 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-content img {
+    width: 150px;
+  }
+
+  .sns-icon {
+    width: 15px;
+  }
+}
